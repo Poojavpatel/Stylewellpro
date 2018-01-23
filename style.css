@@ -1,0 +1,24 @@
+/****************************** DEFAULTS *********************************/
+
+*{
+	box-sizing: border-box;
+	font-weight:400;
+}
+a{
+	text-decoration: none;
+}
+body{
+	text-align: center;
+}
+.nav a{
+	color: white;
+}
+ul{
+	padding: 0;
+}
+img{
+	max-width: 100%;
+}
+li{
+	list-style: none;
+}
