@@ -2,7 +2,6 @@
 
 *{
 	box-sizing: border-box;
-	font-weight:400;
 }
 body{
 	margin: 0;
@@ -32,15 +31,70 @@ li{
 .page1{
     width: 100%;
     height: 100vh;
-    background:linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),url(../img/b.jpeg);
+    background:linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url(../img/b.jpeg);
     /* applying opaque layer using multiple backgrounds and liner gradient */
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
 }
-.page1:after{
-    width: 100%;
-    height: 100%;
+.page1 .content{
+   /* background-color: pink;*/
+    color: white;
+    position: absolute;
+    bottom: 0%;
+    left:0%;
+    padding: 0% 3% 9% 15%;
+    letter-spacing: 0.05rem;
+    text-align: left;
+}
+.page1 .content .contentbox{
+    padding-left:2%;
+    border-left: 4px solid white;
+}
+.page1 .content .contentbox h2{
+    margin: 0;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+.page1 .content .contentbox h3{
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.page1 .content a{
+    color:white;
+    padding:3% 6%;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.page1 .content .btn1{
+    background-color: green;
+    border:2px solid green;
+    transition:0.2s ease-in-out;
+    margin: 0% 5%;
+}
+.page1 .content .btn1:hover{
+    background-color: transparent;
+    border:2px solid green;
+    /*color: green;*/
+}
+.page1 .content .btn2{
+    border: 2px solid green;
+    transition:0.2s ease-in-out;
+}
+.page1 .content .btn2:hover{
+    border: 2px solid green;
+    background-color: green;
+}
 
-}
+
 .page2{
     height: 100vh;
 }
