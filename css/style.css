@@ -29,8 +29,21 @@ li{
 }
 
 /************************************ PAGES ***************************************************/
+.page1{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),url(../img/b.jpeg);
+    /* applying opaque layer using multiple backgrounds and liner gradient */
+    background-size: cover;
+}
+.page1:after{
+    width: 100%;
+    height: 100%;
 
-
+}
+.page2{
+    height: 100vh;
+}
 
 
 
