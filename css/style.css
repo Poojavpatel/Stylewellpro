@@ -126,15 +126,58 @@ li{
     border: 2px solid green;
     background-color: green;
 }
-
-
 .page2{
     height: 100vh;
 }
 
+/************* cool scroll down ******************/
+.coolscroll{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    padding-bottom: 1.8%;
+}
+
+.coolscroll:before,.coolscroll:after{
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    border-bottom: 4px solid white;
+    border-right: 4px solid white;
+}
+.coolscroll:before{
+    animation:goDown 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+.coolscroll:after{
+    animation:goDownAgain 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
 
 
+/************************** KEYFRAMES AND ANIMATION STUFF *********************/
 
+@keyframes goDown{
+    50%{
+        transform: rotate(45deg) translate(70%, 70%);
+    }
+    100%{
+        transform: rotate(45deg) translate(70%, 70%);
+    }
+}
+@keyframes goDownAgain{
+    50%{
+        transform: rotate(45deg) translate(110%, 110%);
+        opacity: 0;
+    }
+    51%{
+        transform: rotate(45deg) translate(-130%, -130%);
+    }
+    100%{
+        transform: rotate(45deg) translate(-70%, -70%);
+        opacity: 1;
+    }
+}
 
 /************************************ END PAGES *************************************************/
 /************************************ GRID ******************************************************/
