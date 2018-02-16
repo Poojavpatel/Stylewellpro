@@ -52,23 +52,56 @@ li{
     padding-left:2%;
     border-left: 4px solid white;
 }
-.page1 .content .contentbox h2{
+/* block reveal */
+#box1,#box2{
+    position: relative;
+    overflow: hidden;
+}
+#box1 h2{
+    position: relative;
+    left:100%;
+}
+#box2 h3{
+    position: relative;
+    left: 60%;
+}
+#box1 .colorlayer{
+    position: absolute;
+    background-color: #20d52f;;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    left:100%;
+}
+#box2 .colorlayer{
+    position: absolute;
+    background-color: #06c506;
+    width: 60%;
+    height: 100%;
+    z-index: 2;
+    left:60%;
+}
+.page1 #box1 h2{
     margin: 0;
+    width: auto;
     font-size: 4.5rem;
     font-weight: 400;
     line-height: 1;
     margin-bottom: 1rem;
+    z-index: 1;
 }
-.page1 .content .contentbox h3{
+.page1 #box2 h3{
     margin: 0;
     font-size: 2.2rem;
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 2rem;
+    z-index: 1;
 }
+/* blockreveal ends */
 .page1 .content a{
     color:white;
-    padding:3% 6%;
+    padding:2.5% 6%;
     display: inline-block;
     border-radius: 4px;
     font-size: 1.1rem;

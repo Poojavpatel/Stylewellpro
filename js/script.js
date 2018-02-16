@@ -15,4 +15,13 @@ $(document).ready(function(){
 	    }, 500);
 	});
 
+	/************************ BLOCK REVEAL **********************************/
+
+	$("#box1 .colorlayer").animate({left:"0px"},400);
+	$("#box1 .colorlayer").delay(400).animate({left:"-100%"},400);
+	$("#box1 h2").animate({left:"0px"},400);
+	$("#box2 .colorlayer").animate({left:"0px"},400);
+	$("#box2 .colorlayer").delay(400).animate({left:"-100%"},400);
+	$("#box2 h3").animate({left:"0px"},400);	
+
 });
