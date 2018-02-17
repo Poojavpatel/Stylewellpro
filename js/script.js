@@ -24,4 +24,22 @@ $(document).ready(function(){
 	$("#box2 .colorlayer").delay(400).animate({left:"-100%"},400);
 	$("#box2 h3").animate({left:"0px"},400);	
 
+	/*********************** Dot Navigation ****************************/
+
+	$('.dotNav ul li').click(function(){
+		console.log(this);
+		$('.current').removeClass('current');
+		$(this).addClass('current');
+	})
+
+	/************************** Highlight current page *******************/
+
+	$('.dotNav a').click(function() {
+		var x=location.pathname;
+		console.log(this);
+  		// $('.dotNav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+	});
+
+
+
 });

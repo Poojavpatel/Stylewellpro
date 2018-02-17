@@ -1,5 +1,10 @@
-/****************************** DEFAULTS *********************************/
+/**************************** SCSS DECLARING VARIABLES ************************/
+:root{
+    --primarycolor:green;
+    --secondarycolor:#20d52f;
+}
 
+/****************************** DEFAULTS *********************************/
 *{
 	box-sizing: border-box;
 }
@@ -52,7 +57,7 @@ li{
     padding-left:2%;
     border-left: 4px solid white;
 }
-/* block reveal */
+/************************************** block reveal ************************************/
 #box1,#box2{
     position: relative;
     overflow: hidden;
@@ -67,7 +72,7 @@ li{
 }
 #box1 .colorlayer{
     position: absolute;
-    background-color: #20d52f;;
+    background-color:var(--secondarycolor) ;
     width: 100%;
     height: 100%;
     z-index: 2;
@@ -75,7 +80,7 @@ li{
 }
 #box2 .colorlayer{
     position: absolute;
-    background-color: #06c506;
+    background-color:var(--primarycolor);
     width: 60%;
     height: 100%;
     z-index: 2;
@@ -98,7 +103,7 @@ li{
     margin-bottom: 2rem;
     z-index: 1;
 }
-/* blockreveal ends */
+/******************************** blockreveal ends ***************************/
 .page1 .content a{
     color:white;
     padding:2.5% 6%;
@@ -108,29 +113,29 @@ li{
     font-weight: 400;
 }
 .page1 .content .btn1{
-    background-color: green;
+    background-color: var(--primarycolor);
     border:2px solid green;
     transition:0.2s ease-in-out;
     margin: 0% 5%;
 }
 .page1 .content .btn1:hover{
     background-color: transparent;
-    border:2px solid green;
+    border:2px solid var(--primarycolor);
     /*color: green;*/
 }
 .page1 .content .btn2{
-    border: 2px solid green;
+    border: 2px solid var(--primarycolor);
     transition:0.2s ease-in-out;
 }
 .page1 .content .btn2:hover{
-    border: 2px solid green;
-    background-color: green;
+    border: 2px solid var(--primarycolor);
+    background-color: var(--primarycolor);
 }
 .page2{
     height: 100vh;
 }
 
-/************* cool scroll down ******************/
+/************************************ cool scroll down *********************************/
 .coolscroll{
     position: absolute;
     bottom: 0%;
@@ -155,7 +160,7 @@ li{
 }
 
 
-/************************** KEYFRAMES AND ANIMATION STUFF *********************/
+/************************** KEYFRAMES AND EXTRA CLASSES *********************/
 
 @keyframes goDown{
     50%{
@@ -177,6 +182,59 @@ li{
         transform: rotate(45deg) translate(-70%, -70%);
         opacity: 1;
     }
+}
+
+.is-loading {
+    overflow: hidden;
+}
+/************************************* DOT NAVIGATION ***********************************/
+.dotNav{
+    position: fixed;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+}
+
+.dotNav ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    cursor: default;
+}
+.dotNav ul li{
+    position: relative;
+    list-style: none;
+    display: block;
+    width:0.7rem;
+    height: 0.7rem;
+    cursor: pointer;
+    margin: 0.5rem 0;
+}
+.dotNav ul li a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    outline: none;
+    background-color: white;
+    background-color: rgba(255,255,255,0.3);
+    cursor: pointer;
+    text-indent: -999em;
+    position: absolute;
+    top:0;
+    left: 0;
+
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.dotNav ul li a:hover{
+    background-color: white;
+}
+.dotNav ul li.current a{
+    background-color: transparent;
+    box-shadow: 0 0 0 2px white;
 }
 
 /************************************ END PAGES *************************************************/
