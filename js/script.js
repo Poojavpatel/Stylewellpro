@@ -115,6 +115,22 @@ $(document).ready(function(){
 		colorEnd:'blue'
 	})
 	.addTo(controller);
+  
+  /******************************* GALLERY LOAD ON SCROLL ANIMATION *************************/
+  var ourScene = new ScrollMagic.Scene({
+      triggerElement:'#gallery',
+      triggerHook:'0.4',
+      duration:'20%',
+    })
+    .setTween(TweenMax.from('.gallerycontainer img', 1, {y:'50%',opacity:'0', ease:Power0.easeNone}))
+    .addIndicators({
+      name:'gallery',
+      colorTrigger:'black',
+      colorStart:'black',
+      colorEnd:'black'
+    })
+    .addTo(controller);  
+
 
 
 });
