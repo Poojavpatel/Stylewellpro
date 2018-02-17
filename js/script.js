@@ -46,7 +46,7 @@ $(document).ready(function(){
   	var ourScene = new ScrollMagic.Scene({
   		triggerElement:'#about',
   		triggerHook:'0.75',
-  		duration:'60%',
+  		duration:'65%',
   	})
   	.setTween(TweenMax.from('#elegentbox1', 1, {y:'-20%' , ease:Power0.easeNone}))
   	.addIndicators({
@@ -60,7 +60,7 @@ $(document).ready(function(){
   	var ourScene = new ScrollMagic.Scene({
   		triggerElement:'#about',
   		triggerHook:'0.75',
-  		duration:'60%',
+  		duration:'65%',
   	})
   	.setTween(TweenMax.from('#elegentbox2', 1, {y:'20%' , ease:Power0.easeNone}))
   	.addIndicators({
@@ -74,7 +74,7 @@ $(document).ready(function(){
   	var ourScene = new ScrollMagic.Scene({
   		triggerElement:'#about',
   		triggerHook:'0.75',
-  		duration:'60%',
+  		duration:'65%',
   	})
   	.setTween(TweenMax.from('#elegentbox3', 1, {y:'-15%' , ease:Power0.easeNone}))
   	.addIndicators({
@@ -88,7 +88,7 @@ $(document).ready(function(){
   	var ourScene = new ScrollMagic.Scene({
   		triggerElement:'#about',
   		triggerHook:'0.75',
-  		duration:'60%',
+  		duration:'65%',
   	})
   	.setTween(TweenMax.from('#elegentbox4', 1, {y:'40%' , ease:Power0.easeNone}))
   	.addIndicators({
@@ -98,5 +98,23 @@ $(document).ready(function(){
   		colorEnd:'yellow'
   	})
   	.addTo(controller);
+
+  	/****************************** PIN ABOUT US FOR 20% TIME *****************************/
+
+  	var pinIntroScene = new ScrollMagic.Scene({
+		triggerElement:'#about',
+		duration:'20%',
+		triggerHook: '0',
+	})
+	.setPin('#about',{pushFollowers:true}) /*using pushfollowers the main goes over the header*/
+	.addIndicators({
+		name:'Pin',
+		colorTrigger:'blue',
+		indent:0,
+		colorStart:'blue',
+		colorEnd:'blue'
+	})
+	.addTo(controller);
+
 
 });

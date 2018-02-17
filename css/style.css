@@ -1,9 +1,10 @@
 /**************************** SCSS DECLARING VARIABLES ************************/
 :root{
-    --primarycolor:green;
-    --secondarycolor:#20d52f;
+    --primarycolor:#86C232;
+    --secondarycolor:#61892F;
     --aboutimage:url("../img/d.jpeg");
 }
+/*#20d52f*/
 
 /****************************** DEFAULTS *********************************/
 *{
@@ -73,7 +74,7 @@ li{
 }
 #box1 .colorlayer{
     position: absolute;
-    background-color:var(--secondarycolor) ;
+    background-color:var(--primarycolor) ;
     width: 100%;
     height: 100%;
     z-index: 2;
@@ -81,7 +82,7 @@ li{
 }
 #box2 .colorlayer{
     position: absolute;
-    background-color:var(--primarycolor);
+    background-color:var(--secondarycolor);
     width: 60%;
     height: 100%;
     z-index: 2;
@@ -115,7 +116,7 @@ li{
 }
 .page1 .content .btn1{
     background-color: var(--primarycolor);
-    border:2px solid green;
+    border:2px solid var(--primarycolor);
     transition:0.2s ease-in-out;
     margin: 0% 5%;
 }
@@ -281,6 +282,8 @@ li{
     font-weight: 400;
     line-height: 1;
     text-align: left;
+    padding-left:2%;
+    border-left: 4px solid var(--primarycolor);
 }
 .aboutSub{
     margin: 0;
@@ -369,8 +372,11 @@ li{
 
 /********************************* PAGE 3 ******************************/
 .page3{
-    height: 100vh;
     width: 100%;
+    min-height: 90vh;
+    height: auto;
+    /*background-image: linear-gradient(120deg, #20d52f 0%, green 100%);*/
+    background-color: var(--primarycolor);
 }
 
 /************************************ END PAGES *************************************************/
