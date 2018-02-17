@@ -103,7 +103,7 @@ $(document).ready(function(){
 
   	var pinIntroScene = new ScrollMagic.Scene({
 		triggerElement:'#about',
-		duration:'20%',
+		duration:'25%',
 		triggerHook: '0',
 	})
 	.setPin('#about',{pushFollowers:true}) /*using pushfollowers the main goes over the header*/

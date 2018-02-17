@@ -236,7 +236,7 @@ li{
     box-shadow: 0 0 0 2px white;
 }
 
-/*************************************** PAGE 2 ****************************************/
+/*************************************** PAGE 2 GRID****************************************/
 .page2{
     height: 100vh;
     width: 100%;
@@ -373,11 +373,52 @@ li{
 /********************************* PAGE 3 ******************************/
 .page3{
     width: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
     height: auto;
     /*background-image: linear-gradient(120deg, #20d52f 0%, green 100%);*/
     background-color: var(--primarycolor);
 }
+.gallerytitle{
+    margin-left: 10%;
+    padding-top: 10%;
+}
+.gallerytitle h2{
+    color: white;
+    margin: 0;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+    padding-left:2%;
+    border-left: 4px solid white;
+    margin-bottom: 1%;
+}
+.gallerytitle h3{
+    color: white;
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 2%;
+}
+.gallerycontainer{
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+/*********************** SEAMLESS RESPONSIVE PHOTO GRID ****************************/
+.gallerycontainer{
+    line-height: 0;
+    column-count:5;
+    column-gap:0px;
+}
+.gallerycontainer img{
+    width: 100%;
+    height: auto;
+}
+
+
 
 /************************************ END PAGES *************************************************/
 /***********************************BACK TO TOP ********************************************/
