@@ -70,7 +70,7 @@ li{
 }
 #box2 h3{
     position: relative;
-    left: 60%;
+    left: 65%;
 }
 #box1 .colorlayer{
     position: absolute;
@@ -83,10 +83,10 @@ li{
 #box2 .colorlayer{
     position: absolute;
     background-color:var(--secondarycolor);
-    width: 60%;
+    width: 65%;
     height: 100%;
     z-index: 2;
-    left:60%;
+    left:65%;
 }
 .page1 #box1 h2{
     margin: 0;
