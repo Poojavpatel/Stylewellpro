@@ -2,6 +2,7 @@
 :root{
     --primarycolor:green;
     --secondarycolor:#20d52f;
+    --aboutimage:url("../img/d.jpeg");
 }
 
 /****************************** DEFAULTS *********************************/
@@ -131,9 +132,6 @@ li{
     border: 2px solid var(--primarycolor);
     background-color: var(--primarycolor);
 }
-.page2{
-    height: 100vh;
-}
 
 /************************************ cool scroll down *********************************/
 .coolscroll{
@@ -237,14 +235,145 @@ li{
     box-shadow: 0 0 0 2px white;
 }
 
+/*************************************** PAGE 2 ****************************************/
+.page2{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.page2wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
+    display: grid;
+    grid-template-columns:8% 4fr 6fr 5%;
+    grid-template-rows:20% auto auto 60% 10%;
+    grid-template-areas:
+    ". . . . "
+    ". title elegentEffect ."
+    ". subtitle elegentEffect ."
+    ". para elegentEffect ."
+    ". . . .";
+    grid-gap:1% 2%;
+    justify-content:space-around;
+}
+
+.aboutTitle{
+    grid-area:title;
+}
+.aboutSub{
+    grid-area:subtitle;
+}
+.aboutPara{
+    grid-area:para;
+}
+.elegentEffect{
+    grid-area:elegentEffect;
+}
+
+.aboutTitle{
+    margin: 0;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+}
+.aboutSub{
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+.aboutPara{
+    text-align: left;
+}
+
+/************************************** ELEGENT EFFECT *****************************/
+.elegentEffect{
+    /*background-color: yellow;*/
+}
+.container1{
+    height:90%;
+    width:100%;
+    /*background-color: pink;*/
+    /*background-image:url("../img/d.jpeg");*/
+    background-size:cover;
+    background-repeat:no-repeat;
+    position:relative;
+}
+.container1 .box:nth-child(1){
+    background-color:green;
+    opacity:0.9;
+    box-shadow:0px 0px 25px rgba(0,0,0,0.5);
+    background-image:url("../img/e.jpeg");
+    background-position:center;
+    background-size:100%;
+    /* (100/13)*100  100/35*100  */
+    width:13%;
+    height:35%;
+    position:absolute;
+    top:35%;
+    left:0%;
+    z-index:5;
+}
+.container1 .box:nth-child(2){
+    background-color:yellow;
+    opacity:0.8;
+    box-shadow:0px 0px 25px rgba(0,0,0,0.5);
+    background-image:url("../img/f.jpeg");
+    background-position:center;
+    background-size:100%;
+    /* (100/30)*100  100/80*100  */
+    width:30%;
+    height:80%;
+    position:absolute;
+    top:15%;
+    left:11.5%;
+    z-index:2;
+}
+.container1 .box:nth-child(3){
+    /*background-color:purple;*/
+    opacity:0.9;
+    box-shadow:0px 0px 25px rgba(0,0,0,0.5);
+    background-image:url("../img/g.jpeg");
+    background-position:center;
+    background-size:100%;
+    /* (100/42)*100  100/100*100  */
+    width:42%;
+    height:100%;
+    position:absolute;
+    top:0%;
+    left:37%;
+    z-index:4;
+}
+.container1 .box:nth-child(4){
+    background-color:cyan;
+    opacity:0.7;
+    box-shadow:0px 0px 25px rgba(0,0,0,0.5);
+    background-image:url("../img/h.jpeg");
+    background-position:center;
+    background-size:100%;
+    /* (100/24)*100  100/75*100  */
+    width:24%;
+    height:75%;
+    position:absolute;
+    top:10%;
+    right:0%;
+    z-index:3;
+}
+
+/********************************* PAGE 3 ******************************/
+.page3{
+    height: 100vh;
+    width: 100%;
+}
+
 /************************************ END PAGES *************************************************/
-/************************************ GRID ******************************************************/
-
-
-
-
-
-/************************************** END GRID *************************************************/
 /***********************************BACK TO TOP ********************************************/
 #return-to-top {
     position: fixed;

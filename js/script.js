@@ -34,12 +34,69 @@ $(document).ready(function(){
 
 	/************************** Highlight current page *******************/
 
-	$('.dotNav a').click(function() {
-		var x=location.pathname;
-		console.log(this);
   		// $('.dotNav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
-	});
+  	console.log(location);
+  	console.log(location.pathname);
+  	console.log(location.pathname.split("/"));
+  	console.log(location.pathname.split("/")[1]);
 
+  	/************************** SCROLL EFFECT ON ELEGENT EFFECT *****************************/
 
+  	var controller = new ScrollMagic.Controller();
+  	var ourScene = new ScrollMagic.Scene({
+  		triggerElement:'#about',
+  		triggerHook:'0.75',
+  		duration:'60%',
+  	})
+  	.setTween(TweenMax.from('#elegentbox1', 1, {y:'-20%' , ease:Power0.easeNone}))
+  	.addIndicators({
+  		name:'arrange',
+  		colorTrigger:'yellow',
+  		colorStart:'yellow',
+  		colorEnd:'yellow'
+  	})
+  	.addTo(controller);
+
+  	var ourScene = new ScrollMagic.Scene({
+  		triggerElement:'#about',
+  		triggerHook:'0.75',
+  		duration:'60%',
+  	})
+  	.setTween(TweenMax.from('#elegentbox2', 1, {y:'20%' , ease:Power0.easeNone}))
+  	.addIndicators({
+  		name:'arrange',
+  		colorTrigger:'yellow',
+  		colorStart:'yellow',
+  		colorEnd:'yellow'
+  	})
+  	.addTo(controller);
+
+  	var ourScene = new ScrollMagic.Scene({
+  		triggerElement:'#about',
+  		triggerHook:'0.75',
+  		duration:'60%',
+  	})
+  	.setTween(TweenMax.from('#elegentbox3', 1, {y:'-15%' , ease:Power0.easeNone}))
+  	.addIndicators({
+  		name:'arrange',
+  		colorTrigger:'yellow',
+  		colorStart:'yellow',
+  		colorEnd:'yellow'
+  	})
+  	.addTo(controller);
+
+  	var ourScene = new ScrollMagic.Scene({
+  		triggerElement:'#about',
+  		triggerHook:'0.75',
+  		duration:'60%',
+  	})
+  	.setTween(TweenMax.from('#elegentbox4', 1, {y:'40%' , ease:Power0.easeNone}))
+  	.addIndicators({
+  		name:'arrange',
+  		colorTrigger:'yellow',
+  		colorStart:'yellow',
+  		colorEnd:'yellow'
+  	})
+  	.addTo(controller);
 
 });
