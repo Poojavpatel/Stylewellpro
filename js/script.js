@@ -131,6 +131,12 @@ $(document).ready(function(){
     })
     .addTo(controller);  
 
+  /********************************************************************/
+  // $(function() {
+  //   $(".heart").on("click", function() {
+  //     $(this).toggleClass("is-active");
+  //   });
+  // });
 
 
 });

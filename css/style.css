@@ -2,7 +2,12 @@
 :root{
     --primarycolor:#86C232;
     --secondarycolor:#61892F;
+    --footercolor:#222629;
+    --thirdcolor:#474B4F;
+    --fourthcolor:#6B6E70;
     --aboutimage:url("../img/d.jpeg");
+    --mainfont:'Open Sans Condensed', sans-serif;;
+    --textfont:'Roboto', sans-serif;
 }
 /*#20d52f*/
 
@@ -13,7 +18,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: var(--mainfont);
 	font-size: 16px;
 	line-height: 1.5;
 	text-align: center;
@@ -182,6 +187,14 @@ li{
         opacity: 1;
     }
 }
+@keyframes faveHeart{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -2800px 0;
+    }
+}
 
 .is-loading {
     overflow: hidden;
@@ -244,6 +257,7 @@ li{
     display: flex;
     justify-content:center;
     align-items:center;
+    color: (--fourthcolor);
 }
 .page2wrapper{
     width: 100%;
@@ -294,6 +308,7 @@ li{
 }
 .aboutPara{
     text-align: left;
+    font-family: var(--textfont);
 }
 
 /************************************** ELEGENT EFFECT *****************************/
@@ -418,10 +433,92 @@ li{
     height: auto;
 }
 /**************************** PAGE 4 *************************/
-.page4{
-    height: 100vh;
+/*********************************** FOOTER **********************************/
+.page5{
     width: 100%;
+    /*display: flex;
+    justify-content:center;
+    align-items:center;*/
+    text-align: center;
+    font-family: var(--textfont);
 }
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: var(--footercolor);
+    color: grey;
+}
+.footer *{
+    margin: 0;
+}
+.footer h3{
+    padding-top: 5%;
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+.copyright{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 3.2%;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color:var(--fourthcolor);
+}
+.footer .address{
+    padding-bottom: 3%;
+    padding-top: 2%;
+}
+.footer .address p{
+    margin-bottom: 0.3%;
+}
+.footer a{
+    color: grey;
+}
+
+.footer ul{
+    padding: 0;
+    list-style: none;
+    padding: 2%;
+}
+.footer ul li{
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 1.5%;
+}
+.footer ul li a{
+    color:grey;
+    width: 60px;
+}
+.footer ul li a i{
+
+}
+
+
+
+
+
+
+/************************************ TWITTER HEART *********************************/
+.heart{
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    cursor: pointer;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    /*-webkit-transition: background-position 1s steps(28);
+    transition: background-position 1s steps(28);
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;*/
+    animation: faveHeart 1s steps(28);
+}
+.heart:hover {
+    transition: background 1s steps(28);
+    background-position: -2800px 0;
+
+}
+
 
 
 /************************************ END PAGES *************************************************/
