@@ -500,23 +500,37 @@ li{
 
 
 /************************************ TWITTER HEART *********************************/
+.copyright{
+    position: relative;
+}
 .heart{
     display: inline-block;
-    height: 1rem;
-    width: 1rem;
+    height: 100px;
+    width: 100px;
     cursor: pointer;
     background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
-    background-position: 0 0;
     /*-webkit-transition: background-position 1s steps(28);
     transition: background-position 1s steps(28);
     -webkit-transition-duration: 0s;
     transition-duration: 0s;*/
     animation: faveHeart 1s steps(28);
+    transform: scale(0.5);
+    transform-origin: bottom left;
+
+    position: absolute;
+    top: -16%;
+    left: 48.5%;
 }
 .heart:hover {
     transition: background 1s steps(28);
     background-position: -2800px 0;
 
+}
+.heartbox{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    /*background: yellow;*/
 }
 
 
