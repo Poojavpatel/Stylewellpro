@@ -12,7 +12,7 @@
 /*#20d52f*/
 
 /****************************** DEFAULTS *********************************/
-*{
+*,*:before,*:after{
 	box-sizing: border-box;
 }
 body{
@@ -384,6 +384,38 @@ li{
     right:0%;
     z-index:3;
 }
+/************************************* PAGE 4 *****************************/
+.page4{
+    height: auto;
+    width: 100%;
+    background-color: var(--fourthcolor);   
+}
+    /****************************** EXPANSION PANEL *********************/
+.expansionPanel{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    padding: 80px 70px;
+}
+.expansionPanelWrapper{
+    position: relative;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /**************************** EXPANSION PANEL ENDS *********************/
 
 /********************************* PAGE 3 ******************************/
 .page3{
@@ -432,7 +464,6 @@ li{
     width: 100%;
     height: auto;
 }
-/**************************** PAGE 4 *************************/
 /*********************************** FOOTER **********************************/
 .page5{
     width: 100%;
