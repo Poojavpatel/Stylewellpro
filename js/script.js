@@ -132,11 +132,23 @@ $(document).ready(function(){
     .addTo(controller);  
 
   /********************************************************************/
-  // $(function() {
-  //   $(".heart").on("click", function() {
-  //     $(this).toggleClass("is-active");
-  //   });
-  // });
+  $(".heart").on("click", function() {
+    $(this).addClass("heartclick");
+
+    var heartcount;
+    /* if local storage exists on machine */
+    if(typeof(Storage) !== "undefined"){
+
+      if (localStorage.heartcount){
+        localStorage.heartcount = Number(localStorage.heartcount) + 1;
+      }
+      else {
+        localStorage.heartcount = 1;
+      }
+      console.log(localStorage);
+      console.log(localStorage.getItem(heartcount));
+    }
+  });
 
 
 });
