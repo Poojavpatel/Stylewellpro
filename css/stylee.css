@@ -10,8 +10,6 @@
     --textfont:'Roboto', sans-serif;
 }
 /*#20d52f*/
-/* desktop  h2:4.5rem    h3:2.2rem  a:1.1rem; */
-/* mobiles  h2:3.3rem    h3:1.6rem  a:0.62rem; */
 
 /****************************** DEFAULTS *********************************/
 *,*:before,*:after{
@@ -40,11 +38,8 @@ img{
 li{
 	list-style: none;
 }
-/********************************* MEDIA QUERIES *****************************************/
-/************************************************************************************************/
-/********************************************* DESKTOP *******************************************/
-/************************************************************************************************/
 
+/********************************* MEDIA QUERIES *****************************************/
 /************************************ PAGES **********************************************/
 .page1{
     width: 100%;
@@ -421,7 +416,7 @@ li{
 
 
 
-/**************************** EXPANSION PANEL ENDS *********************/
+    /**************************** EXPANSION PANEL ENDS *********************/
 
 /********************************* PAGE 3 ******************************/
 .page3{
@@ -531,6 +526,11 @@ li{
 
 }
 
+
+
+
+
+
 /************************************ TWITTER HEART *********************************/
 .copyright{
     position: relative;
@@ -564,6 +564,8 @@ li{
     height: 19px;
     /*background: yellow;*/
 }
+
+
 
 /************************************ END PAGES *************************************************/
 /***********************************BACK TO TOP ********************************************/
@@ -614,85 +616,31 @@ li{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /************************************************************************************************/
 /********************************************* MOBILE *******************************************/
 /************************************************************************************************/
-@media screen and (max-width: 480px ){
-	/************************************ PAGES **********************************************/
-	.page1{
-	    background:linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url(../img/i.jpeg);
-	    /* applying opaque layer using multiple backgrounds and liner gradient */
-	    background-repeat: no-repeat;
-	    background-position: 80% 80%;
-	    background-attachment: fixed;
-	}
-	.page1 .content .contentbox {
-	    padding-left: 2%;
-	    border-left:none;
-	    margin-bottom: 7rem;
-	}
-	.contentbox #box1{
-		border-left: 4px solid white;
-		margin-bottom: 3%;
-	}
-	.page1 .content{
-		margin: 20% 5% 10% 5%;
-		padding: 0% 8%;
-	}
-	.page1 #box1 h2 {
-	    margin: 0;
-	    width: auto;
-	    font-size: 3.7rem;
-	    font-weight: 400;
-	    line-height: 1;
-	    margin-bottom: 0;
-	    margin-left: 2%;
-	    z-index: 1;
-	}
-	.page1 #box2 h3 {
-	    font-size: 1.6rem;
-	    font-weight: 400;
-	    line-height: 1.5;
-	    margin-bottom: 0rem;
-	    z-index: 1;
-	}
-	.page1 .content a {
-		display: block;
-	    padding: 5% 3%;
-	    font-size: 0.9rem;
-	    font-weight: 400;
-	    text-align: center;
-	    margin: 0% 12% 9% 12%;
-	}
-	.dotNav ul li {
-	    width: 0.5rem;
-	    height: 0.5rem;
-	    cursor: pointer;
-	    margin: 0.5rem 0;
-	}
-	.page1 .content .btn1{
-	    margin: 0% 12% 9% 12%;
-	}
-	/************************************** block reveal ************************************/
-	#box2 .colorlayer{
-	    position: absolute;
-	    background-color:var(--secondarycolor);
-	    width: 100%;
-	    height: 100%;
-	    z-index: 2;
-	    left:65%;
-	}
+@media screen and (max-width: 480px){
+
+    .page1{
+        background:linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url(../img/b.jpg);
+    }
+
+
+}
+
+/************************************************************************************************/
+/********************************************* DESKTOP *******************************************/
+/************************************************************************************************/
+@media screen and (min-width:769px ){
+
+
+
+
+
+
+
+
+
 
 } 
 
