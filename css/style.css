@@ -735,6 +735,7 @@ li{
         text-align: left;
     }
     .aboutPara{
+        order:2;
         font-size: 0.9rem;
         text-align: left;
         font-family: var(--textfont);
