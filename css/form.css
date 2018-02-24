@@ -1,0 +1,61 @@
+
+		body{
+			background: url("../img/sofa.jpg");
+			background-size: 50% 710px;
+			
+		}
+		.wrapper
+		{
+			width: 400px; 
+			padding:30px; 
+
+			background: white; 
+			margin: 0 auto; 
+			border-spacing: 20px;
+			opacity: 0.9;
+		}
+		.wrapper input{
+			border-radius: 5px;
+		}
+		
+		.wrapper h3
+		{
+			text-transform: uppercase; 
+			color: #e74c3c;
+			
+		}
+		.wrapper h2
+		{
+			text-transform: uppercase; 
+			color: #86C232;
+			
+		}
+		.wrapper p
+		{
+			color: #222; 
+			font-weight: bold;
+		}
+		.wrapper h4
+		{
+			 font-size: 15px;
+		}
+		.wrapper input[type=text],
+		.wrapper input[type=email],
+		.wrapper input[type=address],
+		textarea{
+			width: 100%;
+			margin-bottom: 15px; 
+			padding: 5px;
+			border-radius: 5px;
+		}
+		.wrapper a{
+			margin-top: 10px;
+			width: 150px;
+
+			font-size: 25px;
+			text-decoration: none;
+			background: #86C232;
+			color: #fff;
+			padding: 2% 5%;
+			border-radius: 4%;
+		}
