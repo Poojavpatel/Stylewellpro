@@ -211,6 +211,7 @@ li{
     top: 50%;
     right: 2%;
     transform: translateY(-50%);
+    z-index: 50;
 }
 
 .dotNav ul{
@@ -463,8 +464,9 @@ li{
 /*********************** SEAMLESS RESPONSIVE PHOTO GRID ****************************/
 .gallerycontainer{
     line-height: 0;
-    column-count:5;
+    column-count:4;
     column-gap:0px;
+    background: linear-gradient(var(--primarycolor), black);
 }
 .gallerycontainer img{
     width: 100%;
@@ -767,7 +769,48 @@ li{
     .gallerycontainer{
         column-count:2;
     }
+    /*********************************** FOOTER **********************************/
+    .footer{
+        padding: 6% 3.5%;
+    }
+    .footer h3{
+        padding-top: 5%;
+        font-size: 1.8rem;
+        margin-bottom: 4%;
+    }
+    .copyright{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding: 3.2%;
+    }
+    .footer .address{
+        font-size: 0.9rem;
+        padding-bottom: 3%;
+        padding-top: 2%;
+        margin-bottom: 5%;
+    }
+    .footer .address p{
+        margin-bottom: 0.3%;
+    }
+    .footer ul{
+        list-style: none;
+        padding: 5%;
+    }
+    .footer ul li{
+        font-size: 0.75rem;
+        margin: 0 1.5%;
+    }
+    .footer ul li a{
+        color:grey;
+        width: 60px;
+    }
+    .footer ul li a i{
 
+    }
+
+    /************************************ TWITTER HEART *********************************/
+    /************************************ END PAGES *************************************************/    
 } 
 
 /************************************************************************************************/

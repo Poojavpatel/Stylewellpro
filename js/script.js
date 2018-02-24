@@ -49,12 +49,12 @@ $(document).ready(function(){
   		duration:'65%',
   	})
   	.setTween(TweenMax.from('#elegentbox1', 1, {y:'-20%' , ease:Power0.easeNone}))
-  	.addIndicators({
-  		name:'arrange',
-  		colorTrigger:'yellow',
-  		colorStart:'yellow',
-  		colorEnd:'yellow'
-  	})
+  	 /*.addIndicators({
+  	 	name:'arrange',
+  	 	colorTrigger:'yellow',
+  	 	colorStart:'yellow',
+  	 	colorEnd:'yellow'
+  	 })*/
   	.addTo(controller);
 
   	var ourScene = new ScrollMagic.Scene({
@@ -63,12 +63,12 @@ $(document).ready(function(){
   		duration:'65%',
   	})
   	.setTween(TweenMax.from('#elegentbox2', 1, {y:'20%' , ease:Power0.easeNone}))
-  	.addIndicators({
+  	/*.addIndicators({
   		name:'arrange',
   		colorTrigger:'yellow',
   		colorStart:'yellow',
   		colorEnd:'yellow'
-  	})
+  	})*/
   	.addTo(controller);
 
   	var ourScene = new ScrollMagic.Scene({
@@ -77,12 +77,12 @@ $(document).ready(function(){
   		duration:'65%',
   	})
   	.setTween(TweenMax.from('#elegentbox3', 1, {y:'-15%' , ease:Power0.easeNone}))
-  	.addIndicators({
+  	/*.addIndicators({
   		name:'arrange',
   		colorTrigger:'yellow',
   		colorStart:'yellow',
   		colorEnd:'yellow'
-  	})
+  	})*/
   	.addTo(controller);
 
   	var ourScene = new ScrollMagic.Scene({
@@ -91,12 +91,12 @@ $(document).ready(function(){
   		duration:'65%',
   	})
   	.setTween(TweenMax.from('#elegentbox4', 1, {y:'40%' , ease:Power0.easeNone}))
-  	.addIndicators({
+  	/*.addIndicators({
   		name:'arrange',
   		colorTrigger:'yellow',
   		colorStart:'yellow',
   		colorEnd:'yellow'
-  	})
+  	})*/
   	.addTo(controller);
 
   	/****************************** PIN ABOUT US FOR 20% TIME *****************************/
@@ -107,13 +107,13 @@ $(document).ready(function(){
 		triggerHook: '0',
 	})
 	.setPin('#about',{pushFollowers:true}) /*using pushfollowers the main goes over the header*/
-	.addIndicators({
+	/*.addIndicators({
 		name:'Pin',
 		colorTrigger:'blue',
 		indent:0,
 		colorStart:'blue',
 		colorEnd:'blue'
-	})
+	})*/
 	.addTo(controller);
   
   /******************************* GALLERY LOAD ON SCROLL ANIMATION *************************/
@@ -123,13 +123,30 @@ $(document).ready(function(){
       duration:'20%',
     })
     .setTween(TweenMax.from('.gallerycontainer img', 1, {y:'50%',opacity:'0', ease:Power0.easeNone}))
-    .addIndicators({
+    /*.addIndicators({
       name:'gallery',
       colorTrigger:'black',
       colorStart:'black',
       colorEnd:'black'
-    })
+    })*/
     .addTo(controller);  
+
+  /* Highlight current page using scroll magic */
+    // console.log(this);
+    // var n = $(this).index();
+    // console.log(n);
+    // var ourScene =new ScrollMagic.Scene({
+    //   triggerElement:'section#gallery',
+    //   triggerHook:0.01,
+    // })
+    //  .setClassToggle('.dotNav li','current')
+    //  .addIndicators({
+    //   name:'dotNav',
+    //   colorTrigger:'purple',
+    //   colorStart:'purple',
+    //   colorEnd:'purple'
+    //  })
+    // .addTo(controller);
 
   /********************************************************************/
   $(".heart").on("click", function() {
