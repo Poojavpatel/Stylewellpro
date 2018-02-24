@@ -10,8 +10,8 @@
     --textfont:'Roboto', sans-serif;
 }
 /*#20d52f*/
-/* desktop  h2:4.5rem    h3:2.2rem  a:1.1rem; */
-/* mobiles  h2:3.3rem    h3:1.6rem  a:0.62rem; */
+/* desktop  h2:4.5rem       h3:2.2rem  a:1.1rem;   text:1rem*/
+/* mobiles  h2:3.7rem 3.5   h3:1.6rem  a:0.62rem;  text:0.73rem*/
 
 /****************************** DEFAULTS *********************************/
 *,*:before,*:after{
@@ -693,6 +693,52 @@ li{
 	    z-index: 2;
 	    left:65%;
 	}
+    /*************************************** PAGE 2 GRID****************************************/
+    .page2{
+        width: 100%;
+        height: auto;
+    }
+    .page2wrapper{
+        margin: 10% 5% 5% 5%;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto auto;
+        grid-template-areas:
+        "title"
+        "subtitle"
+        "elegentEffect"
+        "para";
+        grid-gap:1% 2%;
+        justify-content:space-around;
+    }
+    .elegentEffect{
+        width: 100%;
+        height: 80vw;
+    }
+    .aboutTitle{
+        margin-bottom: 3%;
+        font-size: 3.5rem;
+        font-weight: 400;
+        line-height: 1;
+        text-align: left;
+        padding-left:2%;
+        border-left: 4px solid var(--primarycolor);
+    }
+    .aboutSub{
+        margin-bottom: 6%;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+    .aboutPara{
+        font-size: 0.9rem;
+        text-align: left;
+        font-family: var(--textfont);
+    }
 
 } 
 
