@@ -448,7 +448,7 @@ li{
     background-image: url("../img/kitchen3.jpg");
 }
 .cardItem:nth-child(3) .cardPic{
-    background-image: url("../img/terrace1.jpeg");
+    background-image: url("../img/terrace1.jpg");
 }
 .cardPic::before{
     content: '';
