@@ -173,13 +173,13 @@ $(document).ready(function(){
     duration:'20%',
    })
    .setTween(TweenMax.from('#card1', 1, {y:'-12%', autoAlpha:0 , ease:Power0.easeNone} ))
-   .addIndicators({
-    name:'category1',
-    colorTrigger:'green',
-    colorStart:'green',
-    colorEnd:'green'
-   })
-   .addTo(controller);
+   // .addIndicators({
+   //  name:'category1',
+   //  colorTrigger:'green',
+   //  colorStart:'green',
+   //  colorEnd:'green'
+   // })
+   // .addTo(controller);
 
    var parallaxScene = new ScrollMagic.Scene({
     triggerElement:'.cardsList',
@@ -187,13 +187,13 @@ $(document).ready(function(){
     duration:'20%',
    })
    .setTween(TweenMax.from('#card2', 1, {y:'-12%', autoAlpha:0 , ease:Power0.easeNone} ,'1' ))
-   .addIndicators({
-    name:'category2',
-    colorTrigger:'green',
-    colorStart:'green',
-    colorEnd:'green'
-   })
-   .addTo(controller);
+   // .addIndicators({
+   //  name:'category2',
+   //  colorTrigger:'green',
+   //  colorStart:'green',
+   //  colorEnd:'green'
+   // })
+   // .addTo(controller);
 
    var parallaxScene = new ScrollMagic.Scene({
     triggerElement:'.cardsList',
@@ -201,13 +201,13 @@ $(document).ready(function(){
     duration:'20%',
    })
    .setTween(TweenMax.from('#card3', 1, {y:'-12%', autoAlpha:0 , ease:Power0.easeNone} ,'2' ))
-   .addIndicators({
-    name:'category3',
-    colorTrigger:'green',
-    colorStart:'green',
-    colorEnd:'green'
-   })
-   .addTo(controller);
+   // .addIndicators({
+   //  name:'category3',
+   //  colorTrigger:'green',
+   //  colorStart:'green',
+   //  colorEnd:'green'
+   // })
+   // .addTo(controller);
 
 
 
