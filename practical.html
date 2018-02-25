@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114596253-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-114596253-1');
+	</script>
+	<title>Practicals</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/practical.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Open+Sans+Condensed:300|PT+Sans|Raleway|Roboto" rel="stylesheet"> 
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+</head>
+<body>
+
+	<div class="allcontent">
+		<section class="page1">
+			<h1>CSS Transitions and Transformation</h1>
+			<p> Transforms - move or change the appearance of an element, and<br>Transitions - make the element smoothly and gradually change from one state to another.</p>
+			<p>When used together, these properties allow you to create simple animations and add valuable interaction and visual feedback for your users.</p>
+			<h3>Features</h3>
+			<ul class="features">
+				<li>countless possibilities</li>
+				<li>really simple to implement.</li>
+				<li>Just a couple of lines of code will give you an awesome effect</li>
+				<li>No need for any external library or plugin</li>
+				<li>increase engagement and conversions.</li>
+			</ul>
+		</section>
+
+		<section class="page3">
+			<h2 class="title">CSS transforms</h2>
+			<p>With the CSS transform property you can rotate, move, skew, and scale elements.
+			Transforms are triggered when an element changes states, such as on mouse-hover or mouse-click. </p>
+			<p>translate, scale ,rotate ,skew etc</p>
+
+			<h2 class="subtitle">translate</h2>
+			<p>The translate value moves an element left/right and up/down A positive X value moves the element to the right, while a negative X moves the element to the left. A positive Y value moves the element downwards and a negative Y value, upwards.</p>
+			<div class="demo">
+				<div class="box1"></div>
+			</div>
+			<code>
+				.box1:hover {
+				  transform: translateX(200px);
+				}
+			</code>
+
+			<h2 class="subtitle">scale</h2>
+			<p>The scale value allows you to increase or decrease the size of an element.
+			For example, the value 2 would transform the size to be 2 times its original size. The value 0.5 would transform the size to be half its original size.</p>
+			<div class="demo">
+				<div class="box2"></div>
+			</div>
+			<code>
+				.box2:hover {
+				  transform: scale(2);
+				}
+			</code>
+
+			<h2 class="subtitle">rotate</h2>
+			<p>With the rotate value, the element rotates clockwise or counterclockwise by a specified number of degrees. A positive value, such as 90deg, rotates the element clockwise, while a negative value, such as -90deg, rotates it counterclockwise.</p>
+			<div class="demo">
+				<div class="box3"></div>
+			</div>
+			<code>
+				.box3:hover {
+				  transform: rotate(110deg);
+				}
+			</code>
+		</section>
+
+		<section class="page4">
+			<h2 class="title">CSS transitions</h2>
+			<p>Without a transition, an element being transformed would change abruptly from one state to another. By applying a transition you can control the change, making it smooth and gradual.</p>
+			<p>Shorthand syntax for transition is</p>
+			<code>
+				div {<br>
+				  transition: [property] [duration] [timing-function] [delay];<br>
+				}
+			</code>
+
+
+			<!-- <h2 class="subtitle">transition-property</h2>
+			<p>The transition-property specifies the CSS property where the transition will be applied. </p>
+
+			<h2 class="subtitle">transition-duration</h2>
+			<p>The transition-duration property specifies the time span of the transition. You can specify in seconds or milliseconds.</p>
+
+			<h2 class="subtitle">transition-timing</h2>
+			<p>The transition-timing-function property allows you to define the speed of the transition over the duration. The default timing is ease, which starts out slow, quickly speeds up, and then slows down at the end. The other timing options are: linear, ease, ease-in, ease-out, and ease-in-out.</p>
+
+			<h2 class="subtitle">transition-delay</h2>
+			<p>The transition-delay property allows you to specify when the transform will start.</p> -->
+		</section>
+
+	</div>
+</body>
+</html>
