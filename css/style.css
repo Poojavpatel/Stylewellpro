@@ -436,18 +436,19 @@ li{
     padding: 1rem;
 }
 .cardPic{
-    background-image: url("../img/1.jpg");
+    background-image: url("../img/5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter:contrast(70%);
+    filter:contrast(75%);
     position: relative;
+    transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
 }
-.cardPic:nth-child(2){
-    background-image: url("../img/2.jpg");
+.cardItem:nth-child(2) .cardPic{
+    background-image: url("../img/1.jpg");
 }
-.cardPic:nth-child(3){
-    background-image: url("../img/3.jpg");
+.cardItem:nth-child(3) .cardPic{
+    background-image: url("../img/7.jpg");
 }
 .cardPic::before{
     content: '';
@@ -499,7 +500,9 @@ li{
     text-align: left;
     margin-bottom: 5%;
 }
-
+.cardPic:hover {
+    filter:contrast(100%);
+}
 
 
 
