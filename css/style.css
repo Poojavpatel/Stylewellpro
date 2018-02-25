@@ -481,6 +481,7 @@ li{
     padding-top: 7%;
 }
 .categoriesTitle h2{
+    text-transform: uppercase;
     color: #696969;
     margin: 0;
     font-size: 4.5rem;
@@ -492,6 +493,7 @@ li{
     margin-bottom: 1%;
 }
 .categoriesTitle h3{
+    text-transform: uppercase;
     color: #696969;
     margin: 0;
     font-size: 2.2rem;
