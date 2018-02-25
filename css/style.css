@@ -436,7 +436,7 @@ li{
     padding: 1rem;
 }
 .cardPic{
-    background-image: url("../img/5.jpg");
+    background-image: url("../img/hall2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -445,10 +445,10 @@ li{
     transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
 }
 .cardItem:nth-child(2) .cardPic{
-    background-image: url("../img/1.jpg");
+    background-image: url("../img/kitchen3.jpg");
 }
 .cardItem:nth-child(3) .cardPic{
-    background-image: url("../img/7.jpg");
+    background-image: url("../img/terrace1.jpeg");
 }
 .cardPic::before{
     content: '';
