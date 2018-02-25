@@ -14,7 +14,7 @@
 /* mobiles  h2:3.7rem 3.5   h3:1.6rem  a:0.62rem;  text:0.73rem*/
 
 /****************************** DEFAULTS *********************************/
-*,*:before,*:after{
+*,*::before,*::after{
 	box-sizing: border-box;
 }
 body{
@@ -393,36 +393,115 @@ li{
 }
 /************************************* PAGE 4 *****************************/
 .page4{
-    height: auto;
     width: 100%;
-    background-color: var(--fourthcolor);   
+    height: auto;
+    min-height: 90vh;
+    background-color: #f0f0f0;
+    color: #999999;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;   
 }
-    /****************************** EXPANSION PANEL *********************/
-.expansionPanel{
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-    padding: 80px 70px;
-}
-.expansionPanelWrapper{
-    position: relative;
+.page4wrapper{
+    width: 100%;
     height: 100%;
 }
+.cardsList{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+    padding: 0% 5% 6% 5%;
+    margin: 0;
+
+}
+.cardItem{
+    flex-basis:28%;
+    padding: 1rem;
+}
+.card{
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+
+    display: flex;
+    flex-direction:column;
+}
+.cardContent{
+    flex:1 1 auto;  /* flexgrow flexshrink flexbasis */
+    padding: 1rem;
+}
+.cardPic{
+    background-image: url("../img/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter:contrast(70%);
+    position: relative;
+}
+.cardPic:nth-child(2){
+    background-image: url("../img/2.jpg");
+}
+.cardPic:nth-child(3){
+    background-image: url("../img/3.jpg");
+}
+.cardPic::before{
+    content: '';
+    display: block;
+    padding-top: 66.66%;
+}
+.cardContent .title{
+    color:#696969;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.cardContent .text{
+    margin: 5% 1%;
+
+}
+.cardContent a{
+    display: block;
+    width: 70%;
+    border: 1px solid var(--primarycolor);
+    padding: 2% 5%;
+    border-radius: 5%;
+    margin: 10% auto;
+    text-decoration: none;
+    color: c;
+}
+
+.categoriesTitle{
+    margin-left: 10%;
+    padding-top: 7%;
+}
+.categoriesTitle h2{
+    color: #696969;
+    margin: 0;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+    padding-left: 2%;
+    border-left: 4px solid #696969;
+    margin-bottom: 1%;
+}
+.categoriesTitle h3{
+    color: #696969;
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 5%;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/**************************** EXPANSION PANEL ENDS *********************/
 
 /********************************* PAGE 3 ******************************/
 .page3{
@@ -742,6 +821,32 @@ li{
         font-size: 0.9rem;
         text-align: left;
         font-family: var(--textfont);
+    }
+    /************************************* PAGE 4 *****************************/
+    .categoriesTitle{
+        padding-top: 10%;
+        margin: 0% 5% 5% 5%;
+    }
+    .categoriesTitle h2{
+        margin: 0;
+        font-size: 3.5rem;
+        font-weight: 400;
+        line-height: 1;
+        text-align: left;
+        padding-left:2%;
+        margin-bottom: 3%;
+    }
+    .categoriesTitle h3{
+        margin: 0;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1;
+        text-align: left;
+        margin-bottom: 8%;
+    }
+    .cardItem{
+        flex-basis:100%;
+        padding: 1rem;
     }
     /********************************* PAGE 3 ******************************/
     .gallerytitle{
