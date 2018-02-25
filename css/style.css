@@ -298,6 +298,7 @@ li{
 }
 
 .aboutTitle{
+    text-transform: uppercase;
     margin: 0;
     font-size: 4.5rem;
     font-weight: 400;
@@ -422,7 +423,8 @@ li{
 }
 .cardItem{
     flex-basis:28%;
-    padding: 1rem;
+    flex-grow:1;
+    padding: 4%;
 }
 .card{
     background-color: white;
@@ -458,9 +460,10 @@ li{
 }
 .cardContent .title{
     color:#696969;
-    font-size: 1.25rem;
+    font-size: 2.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+    line-height: 1.2;
 }
 .cardContent .text{
     margin: 5% 1%;
@@ -469,12 +472,12 @@ li{
 .cardContent a{
     display: block;
     width: 70%;
-    border: 1px solid var(--primarycolor);
+    border: 2px solid var(--primarycolor);
     padding: 2% 5%;
     border-radius: 5%;
     margin: 10% auto;
     text-decoration: none;
-    color: c;
+    color: var(--primarycolor);
 }
 
 .categoriesTitle{
