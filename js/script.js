@@ -179,7 +179,7 @@ $(document).ready(function(){
    //  colorStart:'green',
    //  colorEnd:'green'
    // })
-   // .addTo(controller);
+   .addTo(controller);
 
    var parallaxScene = new ScrollMagic.Scene({
     triggerElement:'.cardsList',
@@ -193,7 +193,7 @@ $(document).ready(function(){
    //  colorStart:'green',
    //  colorEnd:'green'
    // })
-   // .addTo(controller);
+   .addTo(controller);
 
    var parallaxScene = new ScrollMagic.Scene({
     triggerElement:'.cardsList',
@@ -207,7 +207,7 @@ $(document).ready(function(){
    //  colorStart:'green',
    //  colorEnd:'green'
    // })
-   // .addTo(controller);
+   .addTo(controller);
 
 
 
