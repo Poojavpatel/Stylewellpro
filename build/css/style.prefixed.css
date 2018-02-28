@@ -1,0 +1,959 @@
+/**************************** SCSS DECLARING VARIABLES ************************/
+:root{
+    --primarycolor:#86C232;
+    --secondarycolor:#61892F;
+    --footercolor:#222629;
+    --thirdcolor:#474B4F;
+    --fourthcolor:#6B6E70;
+    --aboutimage:url("../img/d.jpeg");
+    --mainfont:'Open Sans Condensed', sans-serif;;
+    --textfont:'Roboto', sans-serif;
+}
+/*#20d52f*/
+/* desktop  h2:4.5rem       h3:2.2rem  a:1.1rem;   text:1rem*/
+/* mobiles  h2:3.7rem 3.5   h3:1.6rem  a:0.62rem;  text:0.73rem*/
+
+/****************************** DEFAULTS *********************************/
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: var(--mainfont);
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+}
+.nav a{
+	color: white;
+}
+ul{
+	padding: 0;
+}
+img{
+	max-width: 100%;
+}
+li{
+	list-style: none;
+}
+/********************************* MEDIA QUERIES *****************************************/
+/************************************************************************************************/
+/********************************************* DESKTOP *******************************************/
+/************************************************************************************************/
+
+/************************************ PAGES **********************************************/
+.page1{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url(../img/b.jpg);
+    /* applying opaque layer using multiple backgrounds and liner gradient */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+.page1 .content{
+   /* background-color: pink;*/
+    color: white;
+    position: absolute;
+    bottom: 0%;
+    left:0%;
+    padding: 0% 3% 9% 15%;
+    letter-spacing: 0.05rem;
+    text-align: left;
+}
+.page1 .content .contentbox{
+    padding-left:2%;
+    border-left: 4px solid white;
+}
+/************************************** block reveal ************************************/
+#box1,#box2{
+    position: relative;
+    overflow: hidden;
+}
+#box1 h2{
+    position: relative;
+    left:100%;
+}
+#box2 h3{
+    position: relative;
+    left: 65%;
+}
+#box1 .colorlayer{
+    position: absolute;
+    background-color:var(--primarycolor) ;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    left:100%;
+}
+#box2 .colorlayer{
+    position: absolute;
+    background-color:var(--secondarycolor);
+    width: 65%;
+    height: 100%;
+    z-index: 2;
+    left:65%;
+}
+.page1 #box1 h2{
+    margin: 0;
+    width: auto;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 1rem;
+    z-index: 1;
+}
+.page1 #box2 h3{
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    z-index: 1;
+}
+/******************************** blockreveal ends ***************************/
+.page1 .content a{
+    color:white;
+    padding:2.5% 6%;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.page1 .content .btn1{
+    background-color: var(--primarycolor);
+    border:2px solid var(--primarycolor);
+    transition:0.2s ease-in-out;
+    margin: 0% 5%;
+}
+.page1 .content .btn1:hover{
+    background-color: transparent;
+    border:2px solid var(--primarycolor);
+    /*color: green;*/
+}
+.page1 .content .btn2{
+    border: 2px solid var(--primarycolor);
+    transition:0.2s ease-in-out;
+}
+.page1 .content .btn2:hover{
+    border: 2px solid var(--primarycolor);
+    background-color: var(--primarycolor);
+}
+
+/************************************ cool scroll down *********************************/
+.coolscroll{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    padding-bottom: 1.8%;
+}
+
+.coolscroll:before,.coolscroll:after{
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    border-bottom: 4px solid white;
+    border-right: 4px solid white;
+}
+.coolscroll:before{
+    animation:goDown 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+.coolscroll:after{
+    animation:goDownAgain 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+
+
+/************************** KEYFRAMES AND EXTRA CLASSES *********************/
+
+@keyframes goDown{
+    50%{
+        transform: rotate(45deg) translate(70%, 70%);
+    }
+    100%{
+        transform: rotate(45deg) translate(70%, 70%);
+    }
+}
+@keyframes goDownAgain{
+    50%{
+        transform: rotate(45deg) translate(110%, 110%);
+        opacity: 0;
+    }
+    51%{
+        transform: rotate(45deg) translate(-130%, -130%);
+    }
+    100%{
+        transform: rotate(45deg) translate(-70%, -70%);
+        opacity: 1;
+    }
+}
+@keyframes faveHeart{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -2800px 0;
+    }
+}
+
+.is-loading {
+    overflow: hidden;
+}
+/************************************* DOT NAVIGATION ***********************************/
+.dotNav{
+    position: fixed;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    z-index: 50;
+}
+
+.dotNav ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    cursor: default;
+}
+.dotNav ul li{
+    position: relative;
+    list-style: none;
+    display: block;
+    width:0.7rem;
+    height: 0.7rem;
+    cursor: pointer;
+    margin: 0.5rem 0;
+}
+.dotNav ul li a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    outline: none;
+    background-color: white;
+    background-color: rgba(255,255,255,0.3);
+    cursor: pointer;
+    text-indent: -999em;
+    position: absolute;
+    top:0;
+    left: 0;
+
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.dotNav ul li a:hover{
+    background-color: white;
+}
+.dotNav ul li.current a{
+    background-color: transparent;
+    box-shadow: 0 0 0 2px white;
+}
+
+/*************************************** PAGE 2 GRID****************************************/
+.page2{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack:center;
+        justify-content:center;
+    -ms-flex-align:center;
+        align-items:center;
+    color: (--fourthcolor);
+}
+.page2wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
+    display: grid;
+    grid-template-columns:8% 4fr 6fr 5%;
+    grid-template-rows:20% auto auto 60% 10%;
+    grid-template-areas:
+    ". . . . "
+    ". title elegentEffect ."
+    ". subtitle elegentEffect ."
+    ". para elegentEffect ."
+    ". . . .";
+    grid-gap:1% 2%;
+    -ms-flex-pack:distribute;
+        justify-content:space-around;
+}
+
+.aboutTitle{
+    grid-area:title;
+}
+.aboutSub{
+    grid-area:subtitle;
+}
+.aboutPara{
+    grid-area:para;
+}
+.elegentEffect{
+    grid-area:elegentEffect;
+}
+
+.aboutTitle{
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+    padding-left:2%;
+    border-left: 4px solid var(--primarycolor);
+}
+.aboutSub{
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+.aboutPara{
+    text-align: left;
+    font-family: var(--textfont);
+}
+
+/************************************** ELEGENT EFFECT *****************************/
+.elegentEffect{
+    /*background-color: yellow;*/
+}
+.container1{
+    height:90%;
+    width:100%;
+    /*background-color: pink;*/
+    /*background-image:url("../img/d.jpeg");*/
+    background-size:cover;
+    background-repeat:no-repeat;
+    position:relative;
+}
+.container1 .box:nth-child(1){
+    background-color:green;
+    opacity:0.9;
+    box-shadow:0px 0px 25px rgba(0,0,0,0.5);
+    background-image:url("../img/e.jpeg");
+    background-position:center;
+    background-size:100%;
+    /* (100/13)*100  100/35*100  */
+    width:13%;
+    height:35%;
+    position:absolute;
+    top:35%;
+    left:0%;
+    z-index:5;
+}
+.container1 .box:nth-child(2){
+    background-color:yellow;
+    opacity:0.8;
+    box-shadow:0px 0px 25px rgba(0,0,0,0.5);
+    background-image:url("../img/f.jpeg");
+    background-position:center;
+    background-size:100%;
+    /* (100/30)*100  100/80*100  */
+    width:30%;
+    height:80%;
+    position:absolute;
+    top:15%;
+    left:11.5%;
+    z-index:2;
+}
+.container1 .box:nth-child(3){
+    /*background-color:purple;*/
+    opacity:0.9;
+    box-shadow:0px 0px 25px rgba(0,0,0,0.5);
+    background-image:url("../img/g.jpeg");
+    background-position:center;
+    background-size:100%;
+    /* (100/42)*100  100/100*100  */
+    width:42%;
+    height:100%;
+    position:absolute;
+    top:0%;
+    left:37%;
+    z-index:4;
+}
+.container1 .box:nth-child(4){
+    background-color:cyan;
+    opacity:0.7;
+    box-shadow:0px 0px 25px rgba(0,0,0,0.5);
+    background-image:url("../img/h.jpeg");
+    background-position:center;
+    background-size:100%;
+    /* (100/24)*100  100/75*100  */
+    width:24%;
+    height:75%;
+    position:absolute;
+    top:10%;
+    right:0%;
+    z-index:3;
+}
+/************************************* PAGE 4 *****************************/
+.page4{
+    width: 100%;
+    height: auto;
+    min-height: 90vh;
+    background-color: #f0f0f0;
+    color: #999999;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;   
+}
+.page4wrapper{
+    width: 100%;
+    height: 100%;
+}
+.cardsList{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction:row;
+        flex-direction:row;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+    -ms-flex-pack:distribute;
+        justify-content:space-around;
+    -ms-flex-align:center;
+        align-items:center;
+    padding: 0% 5% 6% 5%;
+    margin: 0;
+
+}
+.cardItem{
+    -ms-flex-preferred-size:28%;
+        flex-basis:28%;
+    -ms-flex-positive:1;
+        flex-grow:1;
+    padding: 4%;
+}
+.card{
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -ms-flex-direction:column;
+        flex-direction:column;
+}
+.cardContent{
+    -ms-flex:1 1 auto;
+        flex:1 1 auto;  /* flexgrow flexshrink flexbasis */
+    padding: 1rem;
+}
+.cardPic{
+    background-image: url("../img/hall2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-filter:contrast(75%);
+            filter:contrast(75%);
+    position: relative;
+    transition: -webkit-filter 0.5s cubic-bezier(.43,.41,.22,.91), filter 0.5s cubic-bezier(.43,.41,.22,.91);
+}
+.cardItem:nth-child(2) .cardPic{
+    background-image: url("../img/kitchen3.jpg");
+}
+.cardItem:nth-child(3) .cardPic{
+    background-image: url("../img/terrace1.jpg");
+}
+.cardPic::before{
+    content: '';
+    display: block;
+    padding-top: 66.66%;
+}
+.cardContent .title{
+    color:#696969;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+.cardContent .text{
+    margin: 5% 1%;
+
+}
+.cardContent a{
+    display: block;
+    width: 70%;
+    border: 2px solid var(--primarycolor);
+    padding: 2% 5%;
+    border-radius: 5%;
+    margin: 10% auto;
+    text-decoration: none;
+    color: var(--primarycolor);
+}
+
+.categoriesTitle{
+    margin-left: 10%;
+    padding-top: 7%;
+}
+.categoriesTitle h2{
+    text-transform: uppercase;
+    color: #696969;
+    margin: 0;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+    padding-left: 2%;
+    border-left: 4px solid #696969;
+    margin-bottom: 1%;
+}
+.categoriesTitle h3{
+    text-transform: uppercase;
+    color: #696969;
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 5%;
+}
+.cardPic:hover {
+    -webkit-filter:contrast(100%);
+            filter:contrast(100%);
+}
+
+
+
+/********************************* PAGE 3 ******************************/
+.page3{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    /*background-image: linear-gradient(120deg, #20d52f 0%, green 100%);*/
+    background-color: var(--primarycolor);
+}
+.gallerytitle{
+    margin-left: 10%;
+    padding-top: 7%;
+}
+.gallerytitle h2{
+    color: white;
+    margin: 0;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+    padding-left:2%;
+    border-left: 4px solid white;
+    margin-bottom: 1%;
+}
+.gallerytitle h3{
+    color: white;
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 5%;
+}
+.gallerycontainer{
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+/*********************** SEAMLESS RESPONSIVE PHOTO GRID ****************************/
+.gallerycontainer{
+    line-height: 0;
+    -webkit-column-count:4;
+       -moz-column-count:4;
+            column-count:4;
+    -webkit-column-gap:0px;
+       -moz-column-gap:0px;
+            column-gap:0px;
+    background: linear-gradient(var(--primarycolor), black);
+}
+.gallerycontainer img{
+    width: 100%;
+    height: auto;
+}
+/*********************************** FOOTER **********************************/
+.page5{
+    width: 100%;
+    /*display: flex;
+    justify-content:center;
+    align-items:center;*/
+    text-align: center;
+    font-family: var(--textfont);
+}
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: var(--footercolor);
+    color: grey;
+}
+.footer *{
+    margin: 0;
+}
+.footer h3{
+    padding-top: 5%;
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+.copyright{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 3.2%;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color:var(--fourthcolor);
+}
+.footer .address{
+    padding-bottom: 3%;
+    padding-top: 2%;
+}
+.footer .address p{
+    margin-bottom: 0.3%;
+}
+.footer a{
+    color: grey;
+}
+
+.footer ul{
+    padding: 0;
+    list-style: none;
+    padding: 2%;
+}
+.footer ul li{
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 1.5%;
+}
+.footer ul li a{
+    color:grey;
+    width: 60px;
+}
+.footer ul li a i{
+
+}
+
+/************************************ TWITTER HEART *********************************/
+.copyright{
+    position: relative;
+}
+.heart{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    /*-webkit-transition: background-position 1s steps(28);
+    transition: background-position 1s steps(28);
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;*/
+    animation: faveHeart 1s steps(28);
+    transform: scale(0.5);
+    transform-origin: bottom left;
+
+    position: absolute;
+    top: -16%;
+    left: 48.5%;
+}
+.heartclick{
+    transition: background 1s steps(28);
+    background-position: -2800px 0;
+
+}
+.heartbox{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    /*background: yellow;*/
+}
+
+/************************************ END PAGES *************************************************/
+/***********************************BACK TO TOP ********************************************/
+#return-to-top {
+    z-index: 55;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+    color:white;
+}
+#return-to-top i {
+    color: white;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+/************************************ BACK TO TOP ENDS **********************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************************************************************************/
+/********************************************* MOBILE *******************************************/
+/************************************************************************************************/
+@media screen and (max-width: 516px ){
+	/************************************ PAGES **********************************************/
+	.page1{
+	    background:linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url(../img/i.jpeg);
+	    /* applying opaque layer using multiple backgrounds and liner gradient */
+	    background-repeat: no-repeat;
+	    background-position: 80% 80%;
+	    background-attachment: fixed;
+	}
+	.page1 .content .contentbox {
+	    padding-left: 2%;
+	    border-left:none;
+	    margin-bottom: 7rem;
+	}
+	.contentbox #box1{
+		border-left: 4px solid white;
+		margin-bottom: 3%;
+	}
+	.page1 .content{
+		margin: 20% 5% 10% 5%;
+		padding: 0% 8%;
+	}
+	.page1 #box1 h2 {
+	    margin: 0;
+	    width: auto;
+	    font-size: 3.7rem;
+	    font-weight: 400;
+	    line-height: 1;
+	    margin-bottom: 0;
+	    margin-left: 2%;
+	    z-index: 1;
+	}
+	.page1 #box2 h3 {
+	    font-size: 1.6rem;
+	    font-weight: 400;
+	    line-height: 1.5;
+	    margin-bottom: 0rem;
+	    z-index: 1;
+	}
+	.page1 .content a {
+		display: block;
+	    padding: 5% 3%;
+	    font-size: 0.9rem;
+	    font-weight: 400;
+	    text-align: center;
+	    margin: 0% 12% 9% 12%;
+	}
+	.dotNav ul li {
+	    width: 0.5rem;
+	    height: 0.5rem;
+	    cursor: pointer;
+	    margin: 0.5rem 0;
+	}
+	.page1 .content .btn1{
+	    margin: 0% 12% 9% 12%;
+	}
+	/************************************** block reveal ************************************/
+	#box2 .colorlayer{
+	    position: absolute;
+	    background-color:var(--secondarycolor);
+	    width: 100%;
+	    height: 100%;
+	    z-index: 2;
+	    left:65%;
+	}
+    /*************************************** PAGE 2 GRID****************************************/
+    .page2{
+        width: 100%;
+        height: auto;
+    }
+    .page2wrapper{
+        margin: 10% 5% 5% 5%;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto auto auto;
+        grid-template-areas:
+        "title"
+        "subtitle"
+        "elegentEffect"
+        "para";
+        grid-gap:1% 2%;
+        -ms-flex-pack:distribute;
+            justify-content:space-around;
+    }
+    .elegentEffect{
+        width: 100%;
+        height: 80vw;
+    }
+    .aboutTitle{
+        margin-bottom: 3%;
+        font-size: 3.5rem;
+        font-weight: 400;
+        line-height: 1;
+        text-align: left;
+        padding-left:2%;
+        border-left: 4px solid var(--primarycolor);
+    }
+    .aboutSub{
+        margin-bottom: 6%;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+    .aboutPara{
+        -ms-flex-order:2;
+            order:2;
+        font-size: 0.9rem;
+        text-align: left;
+        font-family: var(--textfont);
+    }
+    /************************************* PAGE 4 *****************************/
+    .categoriesTitle{
+        padding-top: 10%;
+        margin: 0% 5% 5% 5%;
+    }
+    .categoriesTitle h2{
+        margin: 0;
+        font-size: 3.5rem;
+        font-weight: 400;
+        line-height: 1;
+        text-align: left;
+        padding-left:2%;
+        margin-bottom: 3%;
+    }
+    .categoriesTitle h3{
+        margin: 0;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1;
+        text-align: left;
+        margin-bottom: 8%;
+    }
+    .cardItem{
+        -ms-flex-preferred-size:100%;
+            flex-basis:100%;
+        padding: 1rem;
+    }
+    /********************************* PAGE 3 ******************************/
+    .gallerytitle{
+        padding-top: 10%;
+        margin: 0% 5% 5% 5%;
+    }
+    .gallerytitle h2{
+        margin: 0;
+        font-size: 3.5rem;
+        font-weight: 400;
+        line-height: 1;
+        text-align: left;
+        padding-left:2%;
+        border-left: 4px solid white;
+        margin-bottom: 3%;
+    }
+    .gallerytitle h3{
+        margin: 0;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1;
+        text-align: left;
+        margin-bottom: 8%;
+    }
+    /*********************** SEAMLESS RESPONSIVE PHOTO GRID ****************************/
+    .gallerycontainer{
+        -webkit-column-count:2;
+           -moz-column-count:2;
+                column-count:2;
+    }
+    /*********************************** FOOTER **********************************/
+    .footer{
+        padding: 6% 3.5%;
+    }
+    .footer h3{
+        padding-top: 5%;
+        font-size: 1.8rem;
+        margin-bottom: 4%;
+    }
+    .copyright{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding: 3.2%;
+    }
+    .footer .address{
+        font-size: 0.9rem;
+        padding-bottom: 3%;
+        padding-top: 2%;
+        margin-bottom: 5%;
+    }
+    .footer .address p{
+        margin-bottom: 0.3%;
+    }
+    .footer ul{
+        list-style: none;
+        padding: 5%;
+    }
+    .footer ul li{
+        font-size: 0.75rem;
+        margin: 0 1.5%;
+    }
+    .footer ul li a{
+        color:grey;
+        width: 60px;
+    }
+    .footer ul li a i{
+
+    }
+
+    /************************************ TWITTER HEART *********************************/
+    /************************************ END PAGES *************************************************/    
+} 
+
+/************************************************************************************************/
+/********************************************* TABLET *******************************************/
+/************************************************************************************************/
+@media screen and (min-width: 481px) and (max-width: 768px){
+
+
+
+
+
+
+}
+
+/************************************** END OF FILE ******************************************/
