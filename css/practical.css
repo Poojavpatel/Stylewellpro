@@ -92,35 +92,100 @@ p{
 	justify-content:center;
 	align-items:center;
 }
+.gridcontainer{
+	height: 200vh;
+	width: 100%;
+	padding:5%;
+	display: grid;
+	grid-template-columns:1fr 2fr 2fr;
+	grid-template-rows:1fr 3fr 3fr 3fr 3fr 3fr;
+}
+.griditem{
+	border:1px solid #454547;
+	display:flex;
+	justify-content:center;
+	text-align: center;
+	align-items:center;
+}
+.griditem h2{
+	font-size: 2.2rem;
+	line-height: 3.42rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+.horse{
+	display:flex;
+	justify-content:center;
+	text-align: center;
+	align-items:center;
+}
+.horse{
+	background-color: #F7F7F7
+}
 /********************* actual animations ************************/
-
-.box1{
+.box{
 	width: 100px;
 	height: 100px;
+	background-color: yellow;
+}
+.box1{
 	background-color: #4682B4;
 }
-.box1:hover{
+.box01:hover .box1{
 	transform:translateX(200px);
 }
 .box2{
-	width: 100px;
-	height: 100px;
 	background-color: #48D1CC;
 }
 .box2:hover{
 	transform:scale(2);
 }
 .box3{
-	width: 100px;
-	height: 100px;
 	background-color: #87CEEB;
 }
 .box3:hover{
 	transform:rotate(110deg);
 }
-
-
-
-
-
-
+.box4{
+	background-color: yellow;
+}
+.box4:hover{
+	transform:skew(50deg);
+}
+.box5{
+	background-color: purple;
+}
+.box5:hover {
+	transform: matrix(1, -0.3,0,1,0,0);
+}
+/****************** table **********************/
+.box6{
+	background-color: #4682B4;
+}
+.box7{
+	background-color: #48D1CC;
+}
+.box8{
+	background-color: #87CEEB;
+}
+.box9{
+	background-color: yellow;
+}
+.box10{
+	background-color: purple;
+}
+.item6 .box6{
+	transform:translateX(150px);	
+}
+.item9 .box7{
+	transform:scale(2);
+}
+.item12 .box8{
+	transform:rotate(110deg);
+}
+.item15 .box9{
+	transform:skew(50deg);
+}
+.item18.box10{
+	transform: matrix(1, -0.3,0,1,0,0);
+}

@@ -12,7 +12,7 @@
 	</script>
 	<title>Practicals</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/practical.css">
+	<link rel="stylesheet" type="text/css" href="practical.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Open+Sans+Condensed:300|PT+Sans|Raleway|Roboto" rel="stylesheet"> 
 	<meta name="viewport" content="width=device-width , initial-scale=1.0">
 </head>
@@ -42,7 +42,7 @@
 			<h2 class="subtitle">translate</h2>
 			<p>The translate value moves an element left/right and up/down A positive X value moves the element to the right, while a negative X moves the element to the left. A positive Y value moves the element downwards and a negative Y value, upwards.</p>
 			<div class="demo">
-				<div class="box1"></div>
+				<div class="box01"><div class="box box1"></div></div>
 			</div>
 			<code>
 				.box1:hover {
@@ -54,7 +54,7 @@
 			<p>The scale value allows you to increase or decrease the size of an element.
 			For example, the value 2 would transform the size to be 2 times its original size. The value 0.5 would transform the size to be half its original size.</p>
 			<div class="demo">
-				<div class="box2"></div>
+				<div class="box box2"></div>
 			</div>
 			<code>
 				.box2:hover {
@@ -65,11 +65,33 @@
 			<h2 class="subtitle">rotate</h2>
 			<p>With the rotate value, the element rotates clockwise or counterclockwise by a specified number of degrees. A positive value, such as 90deg, rotates the element clockwise, while a negative value, such as -90deg, rotates it counterclockwise.</p>
 			<div class="demo">
-				<div class="box3"></div>
+				<div class="box box3"></div>
 			</div>
 			<code>
 				.box3:hover {
 				  transform: rotate(110deg);
+				}
+			</code>
+
+			<h2 class="subtitle">Skew</h2>
+			<p>Used to skwe a div</p>
+			<div class="demo">
+				<div class="box box4"></div>
+			</div>
+			<code>
+				.box4:hover {
+				  transform: skew(50deg);
+				}
+			</code>
+
+			<h2 class="subtitle">Matrix</h2>
+			<p>Used to matrix a div</p>
+			<div class="demo">
+				<div class="box box5"></div>
+			</div>
+			<code>
+				.box5:hover {
+				  transform: matrix(1, -0.3,0,1,0,0);
 				}
 			</code>
 		</section>
@@ -99,5 +121,63 @@
 		</section>
 
 	</div>
+
+	<section class="gridcontainer">
+		<div class="griditem item1 horse">
+			<h2>Transformation</h2>
+		</div>
+		<div class="griditem item2 horse">
+			<h2>Before</h2>
+		</div>
+		<div class="griditem item3 horse">
+			<h2>After</h2>
+		</div>
+		<div class="griditem item4 horse">
+			<h2>Translate</h2>
+		</div>
+		<div class="griditem item5">
+			<div class="box box6"></div>
+		</div>
+		<div class="griditem item6">
+			<div class="box box6"></div>
+		</div>
+		<div class="griditem item7 horse">
+			<h2>Scale</h2>
+		</div>
+		<div class="griditem item8">
+			<div class="box box7"></div>
+		</div>
+		<div class="griditem item9">
+			<div class="box box7"></div>
+		</div>
+		<div class="griditem item10 horse">
+			<h2>Rotate</h2>
+		</div>
+		<div class="griditem item11">
+			<div class="box box8"></div>
+		</div>
+		<div class="griditem item12">
+			<div class="box box8"></div>
+		</div>
+		<div class="griditem item13 horse">
+			<h2>Skew</h2>
+		</div>
+		<div class="griditem item14">
+			<div class="box box9"></div>
+		</div>
+		<div class="griditem item15">
+			<div class="box box9"></div>
+		</div>
+		<div class="griditem item16 horse">
+			<h2>Matrix</h2>
+		</div>
+		<div class="griditem item17">
+			<div class="box box10"></div>
+		</div>
+		<div class="griditem item18">
+			<div class="box box10"></div>
+		</div>		
+	</section>
+
 </body>
 </html>
