@@ -13,14 +13,16 @@
 	<title>Practicals</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/practical.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Open+Sans+Condensed:300|PT+Sans|Raleway|Roboto" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Open+Sans+Condensed:300|PT+Sans|Raleway|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet"> 
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width , initial-scale=1.0">
 </head>
 <body>
 
 	<div class="allcontent">
 		<section class="page1">
-			<h1>CSS Transitions and Transformation</h1>
+			<h1 style="margin:10%">CSS Transitions and Transformation</h1>
 			<p> Transforms - move or change the appearance of an element, and<br>Transitions - make the element smoothly and gradually change from one state to another.</p>
 			<p>When used together, these properties allow you to create simple animations and add valuable interaction and visual feedback for your users.</p>
 			<h3>Features</h3>
@@ -121,7 +123,7 @@
 		</section>
 
 	</div>
-
+	<h1 style="margin-bottom:0%"> CSS Transition Table</h1>
 	<section class="gridcontainer">
 		<div class="griditem item1 horse">
 			<h2>Transformation</h2>
@@ -179,5 +181,202 @@
 		</div>		
 	</section>
 
+	<section>
+		<h1>Embedding Audio and Video</h1>
+		<div class="song">
+			<audio controls>
+	  			<source src="img/havana.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		<div class="movie">
+			<video width="50%" height="auto" controls>
+  				<source src="img/lucas.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video> 
+		</div> 
+	</section>
+	<section class="animation">
+		<h1>CSS3 Animation</h1>
+		<div class="animationbox">
+			<div class="sky">
+			</div>
+			<div class="ground"></div>
+			<div class="sun"></div>
+		</div>
+	</section>
+
+	<section class="threed">
+		<h1>CSS3 3D Transformations</h1>
+		<h1>Cube</h1>
+			<div class="wrap">
+				<div class="cube">
+					<div class="front">front</div>
+					<div class="back">back</div>
+					<div class="top">top</div>
+					<div class="bottom">bottom</div>
+					<div class="left">left</div>
+					<div class="right">right</div>
+				</div>
+			</div>
+
+			<h1>Perspective</h1>
+			<div id="red">
+				<div class="box"></div>
+			</div>
+
+			<h1>Carousel</h1>
+			<div class="container">
+			  <div class="carousel">
+			    <div class="item a">A</div>
+			    <div class="item b">B</div>
+			    <div class="item c">C</div>
+			    <div class="item d">D</div>
+			    <div class="item e">E</div>
+			    <div class="item f">F</div>
+			  </div>
+			</div>
+			<div class="next">Next</div>
+			<div class="prev">Prev</div>
+
+			<h1>Card Flip :</h1>
+			<div class="container">
+			  <div id="card">
+			    <figure class="front">1</figure>
+			    <figure class="back">2</figure>
+			  </div>
+			</div>
+
+			<!-- <h1>Rectangular Prism</h1>
+			<div class='cube prismm'>
+			  <div class='front'></div>
+			  <div class='top'></div>
+			  <div class='left'></div>
+			  <div class='right'></div>
+			  <div class='back'></div>
+			  <div class='bottom'></div>
+			</div> -->
+
+	</section>
+
+	<section class="exp6" style="margin-top:9rem;">
+		<h2 >Text Shadows </h2>
+		<h1 class="shade" style="margin: 0.5rem 0;"x>StyleWell Interiors</h1>
+
+		<h2>Gradient Backgrounds </h2>
+		<div class="bx">
+		</div>
+		<h2>Multiple Backgrounds </h2>
+		<div class="shaun"></div>
+
+		<h2>Background Gradient to make patterns</h2>
+		<div class="bx1"></div>
+		<h2>Font face rule</h2>
+		<!-- <h1 class="poo">StyleWell Interiors</h1> -->
+		<div class="aw">
+			<!-- <i  width="500px" class="fas fa-anchor"></i> -->
+			<img src="img/anchor.png">
+		</div>
+		<br>
+		<br>
+
+	</section>
+	<section>
+		<div class="form1">
+			<h1>Contact Us</h1>
+			<form action="#" method="post" autocomplete"on">
+				<div class="row">
+					<label for="firstname">First Name:</label>
+					<input type="text" name="firstname" value="" id="firstname" placeholder="First name" autofocus required>
+					<label for="lastname">Last Name:</label>
+					<input type="text" name="lastname" value="" id="lasttname" placeholder="Last name" autofocus required>
+				</div>
+				<div class="row">
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+				</div>
+				<div class="row">
+					<label for="password">Password:</label>
+					<input type="password" name="pwd" id="password">
+				</div>
+				<div class="row">
+					<label for="gender">Gender: </label>
+					<input type="radio" name="gender" value="male" id="gender">Male
+					<input type="radio" name="gender" value="female" id="gender">Female
+					<input type="radio" name="gender" value="other" id="gender">Other
+				</div>
+				<div class="row">
+					<label for="categories">You want to redign your:</label>
+					<select name="categories" id="categories">
+						<option value="livingspaces">Living Spaces</option>
+						<option value="kitchen">Kitchen</option>
+						<option value="terraces">Terraces</option>
+					</select>
+				</div>
+				<div class="row">
+					<label for="">Select City</label>
+					<input list="cities">
+					<datalist id="cities">
+						<option value="Mumbai"></option>
+						<option value="Pune"></option>
+						<option value="chennai"></option>
+						<option value="navi mumbai"></option>
+						<option value="Delhi"></option>
+					</datalist>
+				</div>
+				<div class="row">
+					<label for="birthday">Birthday:</label>
+					<input type="date" name="bday" id="birthday" placeholder="Your Birthday">
+				</div>
+				<div class="row">
+					<label for="tel">Telephone no:</label>
+					<input type="tel" name="tel" id="tel">
+				</div>
+				<div class="row">
+					<label for="message" placeholder="Your description">Describe</label>
+					<textarea name="message" id="message" cols="70" rows="10"></textarea>
+				</div>
+				<div class="row">
+					<input type="submit" value="submit">
+					<input type="reset">
+				</div>
+			</form>
+		</div>
+	</section>
+	<section>
+		<div id="demo">
+			<h2>AJAX Experiment</h2>
+			<button type="button" onclick="loadDoc()">Change Content</button>
+		</div>
+	</section>
+
+	<div id="googleMap" style="width:100%;height:400px;"></div>
+	
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "https://poojavpatel.github.io/ajaxtest/index.html", true);
+  xhttp.send();
+}
+</script>
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(19.2435,72.8555),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1HNuh0I3lOhiDk2tAkSwVs2C5nLUWWSc&callback=myMap"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </body>
 </html>
