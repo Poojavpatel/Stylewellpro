@@ -21,10 +21,12 @@
   },
   "devDependencies": {
     "gulp": "^4.0.0",
+    "gulp-clean-css": "^3.10.0",
     "gulp-csso": "^3.0.1",
     "gulp-htmlmin": "^4.0.0",
     "gulp-minify": "^3.1.0",
     "gulp-smushit": "^1.2.0",
+    "gulp-uglify": "^3.0.1",
     "run-sequence": "^2.2.1"
   }
 }
