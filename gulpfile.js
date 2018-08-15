@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+// sudo npm i gulp-cli
 var gulp = require('gulp');
 var htmlmin = require('gulp-htmlmin');
 var csso = require('gulp-csso');
@@ -18,7 +19,7 @@ gulp.task('minifyhtml', function() {
         collapseWhitespace: true,
         removeComments: true
       }))
-      .pipe(gulp.dest('./build'));
+      .pipe(gulp.dest('./build/'));
   });
 
 // Gulp task to minify CSS files
@@ -27,7 +28,7 @@ gulp.task('minifycss', function () {
       // Minify the file
       .pipe(csso())
       // Output
-      .pipe(gulp.dest('./build/css'));
+      .pipe(gulp.dest('./build/css/'));
   });
 
 // Gulp task to minify JavaScript files
@@ -39,7 +40,7 @@ gulp.task('minifyjs', function() {
     //   .pipe(gulp.dest('./build'));
     gulp.src('./js/script.js')
     .pipe(minify())
-    .pipe(gulp.dest('./build/js'));
+    .pipe(gulp.dest('./build/js/'));
   });
 
 // //Optimizing images

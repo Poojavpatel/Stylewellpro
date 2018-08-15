@@ -16,7 +16,9 @@
     "url": "https://github.com/Poojavpatel/Stylewell/issues"
   },
   "homepage": "https://github.com/Poojavpatel/Stylewell#readme",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-cli": "^2.0.1"
+  },
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-csso": "^3.0.1",
