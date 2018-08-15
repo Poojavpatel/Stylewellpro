@@ -54,7 +54,7 @@ h1{
 	text-align: center;
 	color: #29292c;
 	font-weight: 600;
-	margin: 10%;
+	margin: 5%;
 }
 p{
 	color: #454547;
@@ -93,9 +93,10 @@ p{
 	align-items:center;
 }
 .gridcontainer{
+	overflow: hidden;
 	height: 200vh;
 	width: 100%;
-	padding:5%;
+	padding:1% 5%;
 	display: grid;
 	grid-template-columns:1fr 2fr 2fr;
 	grid-template-rows:1fr 3fr 3fr 3fr 3fr 3fr;
@@ -189,3 +190,412 @@ p{
 .item18.box10{
 	transform: matrix(1, -0.3,0,1,0,0);
 }
+.song{
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+audio{
+	margin: auto;
+}
+.movie{
+	margin: 1rem 0;
+	display: flex;
+}
+video{
+	margin: auto;
+}
+.shade{
+	text-shadow: 2px 2px 8px #86C232;
+	
+	color: #61892F;
+}
+.exp6{
+	padding: 0% 10%;
+}
+.bx{
+	height: 25vh;
+	width: 100%;
+	background: -webkit-linear-gradient(left, #283c86, #45a247);
+	background:  linear-gradient(left, #283c86, #45a247);
+}
+.shaun{
+	width: 100%;
+	height: 40vh;
+	
+	background: url("../img/s.png") no-repeat ,url("../img/a.png") repeat-x left bottom ,#71d6ff;
+	background-size: auto, auto, cover;
+}
+.bx1{
+	height: 30vh;
+	width: 100%;
+	
+	margin: 0 auto;
+	background:
+	linear-gradient(45deg, #92baac 45px, transparent 45px)64px 64px,
+	linear-gradient(45deg, #92baac 45px, transparent 45px,transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),
+	linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px,#92baac 158px);
+	background-color:#e1ebbd;
+	background-size: 128px 128px;
+}
+.poo{
+	font-family: 'Berkshire Swash', cursive;
+	src: url("../img/BerkshireSwash-Regular.ttf");
+}
+.aw{
+	display: flex;
+
+}
+.fas{
+	margin: auto;
+	font-size: 4rem;
+
+}
+/********************css3 animation ***********************/
+.animationbox{
+	width:70vh;
+	height:70vh;
+	position: relative;
+	margin: 0 auto;
+}
+.sky{
+	height: 70%;
+	width:100%;
+	position: absolute;
+	top: 0;
+	background-color:#1b6d8d;
+	z-index: 1;
+	animation:skyglow 10s infinite;
+}
+.ground{
+	height: 30%;
+	width:100%;
+	position: absolute;
+	bottom: 0;
+	background-color: #0c840c;
+	z-index: 2;
+	animation:groundglow 10s infinite;
+}
+.sun{
+	height: 30%;
+	width:30%;
+	position: absolute;
+	bottom: 0%;
+	right:10%;
+	background-color: yellow;
+	border-radius: 50%;
+	z-index:1;
+	animation:sunrise 10s infinite , glow 10s infinite;;
+}
+@keyframes sunrise{
+	0%{
+		bottom: 0%;
+	}
+	100%{
+		bottom: 60%;
+	}
+}
+@keyframes skyglow{
+	0%{
+		background-color:#1b6d8d; 
+	}
+	100%{
+		background-color: #37b5e7;
+	}
+}
+@keyframes groundglow{
+	0%{
+		background-color: #0c840c; 
+	}
+	100%{
+		background-color: #13ba13;
+	}
+}
+/******************************** ajax **********************/
+#demo{
+	padding: 5% 7%;
+}
+/*********************** form ************************/
+.form1{
+	background-color: #f2f2f2;
+	width: 100%;
+	height: auto;
+}
+.form1 h1{
+	margin-top: 0;
+}
+form h1{
+	text-align: center;
+}
+form{
+	padding: 2% 5%;
+}
+input,textarea,select{
+	width: 100%;
+	padding: 0.7rem 0.5rem;
+	margin: 8px 0;
+	border: 3px solid #ccc;
+	border-radius: 4px;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+textarea{
+	resize:none;
+}
+input[type=button], input[type=submit], input[type=reset] {
+	width: 100%;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 0.7rem 0.5rem;
+    text-decoration: none;
+    margin: 8px 0;
+    cursor: pointer;
+}
+input[type="radio"]{
+	width: auto;
+}
+/****************************** 3d ************************/
+/******************** perspective **********************/
+.threed{
+	padding:0% 8%;
+	position: relative;
+}
+
+.threed h1{
+	font-size: 1.5rem;
+	color: #454547;
+	margin: 5% auto 3% auto;
+}
+
+#red{
+	border: 4px solid grey;
+	width: 300px;
+	height: 360px;
+}
+#red .box {
+	width: 60%;
+	height: 80%;
+  	background-color: red;
+  	transform: perspective( 600px ) rotateY( 45deg );
+}
+
+/*****************************cube ************************************/
+.wrap {
+	height: 30vh;
+	perspective: 800px;
+	perspective-origin: 50% 100px;
+}
+.cube {
+	position: relative;
+	width: 200px;
+	transform-style: preserve-3d;
+	left: 4%;
+}
+.cube div {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+}
+.back {
+	transform: translateZ(-100px) rotateY(180deg);
+	background: yellow;
+}
+.right {
+	transform: rotateY(-270deg) translateX(100px);
+	transform-origin: top right;
+	background: grey;
+}
+.left {
+	transform: rotateY(270deg) translateX(-100px);
+	transform-origin: center left;
+	background: grey;
+}
+.top {
+	transform: rotateX(-90deg) translateY(-100px);
+	transform-origin: top center;
+	background: pink;
+}
+.bottom {
+	transform: rotateX(90deg) translateY(100px);
+	transform-origin: bottom center;
+	background: pink;
+}
+.front {
+	transform: translateZ(100px);
+	background: yellow;
+}
+/********************* carousel ***************************/
+.container {
+  margin: 0 auto;
+  width: 250px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.item {
+  display: block;
+  position: absolute;
+  background: #000;
+  width: 250px;
+  height: 200px;
+  line-height: 200px;
+  font-size: 5em;
+  text-align: center;
+  color: #FFF;
+  opacity: 0.95;
+  border-radius: 10px;
+}
+
+.a {
+  transform: rotateY(0deg) translateZ(250px);
+  background: #ed1c24;
+}
+.b {
+  transform: rotateY(60deg) translateZ(250px);
+  background: #0072bc;
+}
+.c {
+  transform: rotateY(120deg) translateZ(250px);
+  background: #39b54a;
+}
+.d {
+  transform: rotateY(180deg) translateZ(250px);
+  background: #f26522;
+}
+.e {
+  transform: rotateY(240deg) translateZ(250px);
+  background: #630460;
+} 
+.f {
+  transform: rotateY(300deg) translateZ(250px);
+  background: #8c6239;
+}
+
+.next, .prev {
+  color: #444;
+  position: absolute;
+  top: 1110px;
+  padding: 1em 2em;
+  cursor: pointer;
+  background: #CCC;
+  border-radius: 5px;
+  border-top: 1px solid #FFF;
+  box-shadow: 0 5px 0 #999;
+  transition: box-shadow 0.1s, top 0.1s;
+}
+.next:hover, .prev:hover { color: #000; }
+.next:active, .prev:active {
+  top: 104px;
+  box-shadow: 0 1px 0 #999;
+}
+.next { right: 3em; }
+.prev { left: 3em; }
+/**************************** card flip **************/
+.container { 
+  width: 200px;
+  height: 260px;
+  position: relative;
+  perspective: 800px;
+}
+#card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+#card figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+#card .front {
+  background: red;
+  color: white;
+  font-size: 8rem;
+}
+#card .back {
+  background: blue;
+  color: white;
+  font-size: 8rem;
+  transform: rotateY( 180deg );
+}
+.container:hover #card{
+  transform: rotateY( 180deg );
+}
+
+/******************** prism ******************/
+/*.prismm.cube {
+  top: 100px;
+  left: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(30deg) rotateY(-45deg);
+}
+
+.prismm>.left, .right, .front, .top, .back, .bottom {
+  position: absolute;
+}
+
+.prismm>.left, .right {
+  background: #06a;
+  width: 150px;
+  height: 150px;
+}
+
+.prismm>.front, .back {
+  background: #048;
+  width: 300px;
+  height: 150px;
+}
+
+.prismm>.top, .bottom {
+  background: #08c;
+  border-radius: 30px;
+  width: 300px;
+  height: 150px;
+}
+
+.prismm>.front {
+  z-index: 2;
+}
+
+.prismm>.top {
+  transform-origin: 0% 100%;
+  transform: translateY(-150px) rotateX(-90deg);
+  z-index: 2;
+}
+
+.prismm>.left {
+  transform-origin: 100% 100%;
+  transform: translateX(-150px) rotateY(90deg);
+  z-index: 2;
+}
+
+.prismm>.right {
+  transform-origin: 0% 0%;
+  transform: translateX(300px) rotateY(-90deg);
+}
+
+.prismm>.back {
+  transform: translateZ(150px);
+}
+
+.prismm>.bottom {
+  transform-origin: 0% 0%;
+  transform: translateY(150px) rotateX(90deg);
+}*/
